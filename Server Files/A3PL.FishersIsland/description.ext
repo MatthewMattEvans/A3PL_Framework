@@ -1,0 +1,165 @@
+/*
+    Code written by NORTHBRIDGE INTERACTIVE
+	58, RUE DE MONCEAU, 75008 PARIS, FRANCE
+	SIRET : 93008862000016 
+    @Copyright NORTHBRIDGE INTERACTIVE (https://northbridgeinteractive.com)
+    YOU ARE NOT ALLOWED TO COPY OR DISTRIBUTE THE CONTENT OF THIS FILE WITHOUT AUTHOR AGREEMENT
+    More informations : https://www.bistudio.com/community/game-content-usage-rules
+    Contact : contact@northbridgeinteractive.com
+*/
+
+onLoadName = "Arma 3 Project Life";
+author = "NORTHBRIDGE INTERACTIVE";
+onLoadMission = "www.arma3projectlife.com";
+loadScreen = "A3PL_Common\A3PL_PictureMod.paa";
+
+disableChannels[] = {{0,true,true},{1,true,true},{2,true,true},{4,true,true},{5,true,true},{6,true,true}};
+enableDebugConsole[] = {};
+
+skipLobby = 1;
+joinUnassigned = 0;
+disabledAI = 1;
+forceRotorLibSimulation = 2;
+
+corpseManagerMode = 3;
+corpseLimit=100;
+corpseRemovalMinTime=999;
+corpseRemovalMaxTime=9999;
+
+wreckManagerMode = 1;
+wreckLimit=5;
+wreckRemovalMinTime=60;
+wreckRemovalMaxTime=320;
+
+debriefing = 0;
+briefing = 0;
+allowProfileGlasses = 0;
+
+showCompass = 1;
+showWatch = 1;
+showGroupIndicator = 0;
+showNotePad = 0;
+showGPS = 1;
+
+showHUD[] = {
+	true,	// Scripted HUD (same as showHUD command)
+	true,	// Vehicle and unit info
+	true,	// Vehicle radar [HIDDEN]
+	true,	// Vehicle compass [HIDDEN]
+	false,	// Tank direction indicator
+	false,	// Commanding menu
+	false,	// Group info bar
+	true,	// HUD weapon cursors
+	true	// Vehicle display panels
+};
+
+class Header
+{
+	gameType = RPG;
+	minPlayers = 1;
+	maxPlayers = 110;
+};
+
+#include "Configs\CfgDisabledCommands.hpp"
+#include "Configs\CfgDebriefing.hpp"
+#include "Configs\CfgSounds.hpp"
+#include "Configs\CfgMapAreas.hpp"
+#include "Configs\CfgLocations.hpp"
+#include "Configs\CfgSmartMarkers.hpp"
+#include "Configs\CfgNotifications.hpp"
+
+#include "Dialogs\common.hpp"
+#include "Dialogs\marcos.hpp"
+// #include "Dialogs\defines_inventorynew.hpp" // BACKUP: New inventory system (see _BACKUP files)
+#include "Dialogs\Dialog_Loading.hpp"
+#include "Dialogs\Dialog_Spawn.hpp"
+#include "Dialogs\Dialog_CAD.hpp"
+#include "Dialogs\Dialog_Achievements.hpp"
+#include "Dialogs\Dialog_Confirmation.hpp"
+#include "Dialogs\Dialog_Inventory.hpp"
+#include "Dialogs\Dialog_Shop.hpp"
+#include "Dialogs\dialog_PlayerGarage.hpp"
+#include "Dialogs\Dialog_PoliceDatabase.hpp"
+#include "Dialogs\Dialog_PatDown.hpp"
+#include "Dialogs\Dialog_HouseBuy.hpp"
+#include "Dialogs\Dialog_HouseVirtual.hpp"
+#include "Dialogs\Dialog_NPC.hpp"
+#include "Dialogs\Dialog_interactionRadial.hpp"
+#include "Dialogs\Dialog_Medical.hpp"
+#include "Dialogs\Dialog_CreateTicket.hpp"
+#include "Dialogs\Dialog_Treasury.hpp"
+#include "Dialogs\Dialog_ReceiveTicket.hpp"
+#include "Dialogs\Dialog_JailPlayer.hpp"
+#include "Dialogs\Dialog_Admin.hpp"
+#include "Dialogs\Dialog_UberAccept.hpp"
+#include "Dialogs\Dialog_Kane9.hpp"
+#include "Dialogs\Dialog_ATC.hpp"
+#include "Dialogs\Dialog_Transponder.hpp"
+#include "Dialogs\Dialog_Twitter.hpp"
+#include "Dialogs\Dialog_ItemSale.hpp"
+#include "Dialogs\Dialog_ItemBuy.hpp"
+#include "Dialogs\Dialog_Gasstation.hpp"
+#include "Dialogs\Dialog_Factory.hpp"
+#include "Dialogs\Dialog_Factory_V2.hpp"
+#include "Dialogs\Dialog_Stock.hpp"
+#include "Dialogs\Dialog_Garage.hpp"
+#include "Dialogs\Dialog_FactionSetup.hpp"
+#include "Dialogs\Dialog_CCTV.hpp"
+#include "Dialogs\Dialog_TaxiMeter.hpp"
+#include "Dialogs\Dialog_IE.hpp"
+#include "Dialogs\Dialog_Param.hpp"
+#include "Dialogs\Dialog_Nokia.hpp"
+#include "Dialogs\Dialog_iPhone.hpp"
+#include "Dialogs\Dialog_Sony.hpp"
+#include "Dialogs\Dialog_SonyP.hpp"
+#include "Dialogs\Dialog_SonyDOJ.hpp"
+#include "Dialogs\Dialog_Forfait.hpp"
+#include "Dialogs\Dialog_DMV.hpp"
+#include "Dialogs\Dialog_BagWeed.hpp"
+#include "Dialogs\Dialog_CombineItems.hpp"
+#include "Dialogs\Dialog_Realestate.hpp"
+#include "Dialogs\dialog_Company.hpp"
+#include "Dialogs\Dialog_DeveloperDebug.hpp"
+#include "Dialogs\Dialog_ExecutiveMenu.hpp"
+#include "Dialogs\Dialog_Vehiclestorage.hpp"
+#include "Dialogs\Dialog_Setname.hpp"
+#include "Dialogs\Dialog_Prospect.hpp"
+#include "Dialogs\Dialog_Fakeid.hpp"
+#include "Dialogs\Dialog_Warehousebuy.hpp"
+#include "Dialogs\Dialog_Roommates.hpp"
+#include "Dialogs\Dialog_AnimationWheel.hpp"
+#include "Dialogs\Dialog_CompanyBill.hpp"
+#include "Dialogs\Dialog_Budget_Manage.hpp"
+#include "Dialogs\Dialog_CrackhouseBuy.hpp"
+#include "Dialogs\Dialog_BowlingRegister.hpp"
+#include "Dialogs\Dialog_BowlingScoring.hpp"
+#include "Dialogs\Dialog_CallCenter.hpp"
+#include "Dialogs\Dialog_HUD_Cinema.hpp"
+#include "Dialogs\Dialog_HUD_Golf.hpp"
+#include "Dialogs\Dialog_YoutubeAdmin.hpp"
+#include "Dialogs\Dialog_YoutubeMain.hpp"
+#include "Dialogs\Dialog_YoutubeOverlay.hpp"
+#include "Dialogs\Dialog_Golf.hpp"
+#include "Dialogs\Dialog_Bank.hpp"
+#include "Dialogs\Dialog_FilesManager.hpp"
+#include "Dialogs\Dialog_Keypad.hpp"
+// #include "Dialogs\dialog_inventorynew.hpp" // BACKUP: New inventory system (see _BACKUP files)
+#include "Dialogs\dialog_traits.hpp"
+#include "Dialogs\dialog_repair.hpp"
+#include "Dialogs\Dialog_ImpoundMark.hpp"
+#include "Dialogs\Dialog_ImpoundList.hpp"
+#include "Dialogs\Dialog_GPS_Menu.hpp"
+
+class RscTitles {
+	#include "Dialogs\Dialog_Hotbar.hpp"
+	#include "Dialogs\Dialog_HUD.hpp"
+	#include "Dialogs\Dialog_HUD_IDCard.hpp"
+	#include "Dialogs\Dialog_Hud_Overlay.hpp"
+	#include "Dialogs\Dialog_HUD_Twitter.hpp"
+	#include "Dialogs\Dialog_HUD_Phone.hpp"
+	#include "Dialogs\Dialog_HUD_Email.hpp"
+	#include "Dialogs\Dialog_HUD_LoadAction.hpp"
+	#include "Dialogs\dialog_hud_gps.hpp"
+	#include "Dialogs\dialog_news.hpp"
+	#include "Dialogs\dialog_miranda.hpp"
+};

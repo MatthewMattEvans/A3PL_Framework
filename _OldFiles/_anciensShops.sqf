@@ -1,0 +1,25 @@
+
+	["Shop_VFD_Supplies_Vendor",[
+			["item","roadcones",0,-1,{true}],
+			["item","fd_yadapter",0,-1,{true}],
+			["item","fd_adapter",0,-1,{true}],
+			["item","fd_hose",0,-1,{true}],
+			["item","fd_hydrantwrench",0,-1,{true}],
+			["item","fd_mask",0,-1,{true}],
+			["weapon","A3PL_High_Pressure",0,-1,{true}],
+			["weapon","A3PL_FireExtinguisher",0,-1,{true}],
+			["magazine","A3PL_Extinguisher_Water_Mag",0,-1,{true}],
+			["weapon","A3PL_FireAxe",0,-1,{true}],
+			["uniform","A3PL_FD_Protective_Uniform",0,-1,{true}],
+			["uniform","A3PL_VFD_Lieutenant_Uniform",0,-1,{true}],
+			["uniform","A3PL_VFD_Engineer_Uniform",0,-1,{true}],
+			["uniform","A3PL_VFD_Firefighter_Uniform",0,-1,{true}],
+			["vest","A3PL_FD_Oxygen",0,-1,{true}],
+			["vest","A3PL_VFD_Vest",0,-1,{true}],
+			["vest","A3PL_VFD_IC_Vest",0,-1,{true}],
+			["headgear","A3PL_Volunteer_FD_Cap",0,-1,{true}],
+			["headgear","A3PL_FireHelmet_Firefighter_New",0,-1,{true}],
+			["headgear","A3PL_FireHelmet_Engineer_New",0,-1,{true}],
+			["headgear","A3PL_FireHelmet_Lieutenant_New",0,-1,{true}]
+		],{fifr_table_1 modelToWorld [0,0,-0.5]}
+	],
